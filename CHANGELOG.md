@@ -4,6 +4,8 @@ All notable changes to nightcut. Versions follow [semantic versioning](https://s
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-11-18
+
 ### Added
 - **Shorts keep the single audio tracks.** A Short still plays and uploads as before: its first
   audio track is the finished mix. Behind it the file now carries the single tracks of the recording
@@ -90,7 +92,8 @@ First release: highlight and Let's Play modes, kill feed scan, Shorts, YouTube m
 timelines for DaVinci Resolve and Premiere Pro, cost report and the one-click Windows installer
 `install.bat`.
 
-[Unreleased]: https://github.com/Nilson89/nightcut/compare/0.3.1...HEAD
+[Unreleased]: https://github.com/Nilson89/nightcut/compare/0.3.2...HEAD
+[0.3.2]: https://github.com/Nilson89/nightcut/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/Nilson89/nightcut/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/Nilson89/nightcut/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/Nilson89/nightcut/compare/0.1.0...0.2.0
