@@ -159,6 +159,10 @@ shorts:
   count: 3
   min_s: 10
   max_s: 59
+  # true: behind the finished mix the Short keeps the single audio tracks (mic, game, voice chat, ...),
+  # and short_01.xml next to it puts them on separate tracks in your editor. Players and upload sites
+  # only take the first track, the finished mix. false: one audio track only, no timeline.
+  separate_audio: true
   font: Bebas Neue          # must be installed, or put the .ttf into fonts_dir
   fonts_dir: null
   font_size: 120

@@ -25,7 +25,8 @@ FULL_FRAME = {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0}
 
 class LetsPlayRun(Run):
     def __init__(self, sources: list[Path], cfg: dict, force: set[str] | None = None, name: str | None = None):
-        super().__init__(sources[0], cfg, force, name=name or f"{sources[0].stem}_letsplay")
+        super().__init__(sources[0], cfg, force, name=name or f"{sources[0].stem}_letsplay",
+                         sources=sources, mode="letsplay")
         self.sources = sources
 
     def run(self) -> list[Path]:

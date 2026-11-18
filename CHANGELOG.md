@@ -4,6 +4,26 @@ All notable changes to nightcut. Versions follow [semantic versioning](https://s
 
 ## [Unreleased]
 
+### Added
+- **Shorts keep the single audio tracks.** A Short still plays and uploads as before: its first
+  audio track is the finished mix. Behind it the file now carries the single tracks of the recording
+  (`MIC`, `GAME`, `PARTY`, others with their name), and `shorts/short_01.xml` next to it is a
+  vertical timeline for Resolve/Premiere with every track on its own audio track and the finished
+  mix switched off, like in the main timeline. Switch it off with `shorts.separate_audio: false`.
+  For a run you already have: `--force shorts`.
+
+### Changed
+- **One output folder per run.** nightcut only continues in a folder that holds exactly this run
+  (same recording, settings and nightcut version). A folder with another recording of the same
+  name, a run with other settings or of an older nightcut, or files that are not from nightcut is
+  left as it is, and the new run writes to `<name>_2`, `<name>_3`, ... Before, the new run took
+  the finished stages of the old one and mixed both. `--force <stage>` stays in the folder of the
+  earlier run of this recording, so trying a changed profile is as quick as before.
+
+### Fixed
+- A finished stage whose files are gone (e.g. deleted clips in `media/` or an emptied `cache/`)
+  is made again, with everything after it, instead of pointing the timeline at missing files.
+
 ## [0.3.1] - 2026-11-13
 
 ### Changed

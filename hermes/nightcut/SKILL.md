@@ -56,8 +56,12 @@ Useful options:
 
 A run is resumable. If it was interrupted, run the same command again.
 
-Output in `<output_dir>/<recording name>/` (highlights) or `<output_dir>/<name>/` (Let's Play):
-- highlights: `<name>_nightcut.xml`, `media/`, `shorts/short_01.mp4 …`, `youtube.txt`, `report.md`
+Output in `<output_dir>/<recording name>/` (highlights) or `<output_dir>/<name>/` (Let's Play).
+If that folder already holds another run (another recording with the same name, other settings,
+an older nightcut), nightcut leaves it alone and writes to `<name>_2`, `<name>_3`, ... Take the
+folder from the `Timeline:` / `Timelines:` line the command prints at the end, do not guess it.
+- highlights: `<name>_nightcut.xml`, `media/`, `shorts/short_01.mp4 …` (each with a `short_01.xml`
+  to balance the audio tracks in the editor), `youtube.txt`, `report.md`
 - letsplay: `ep01_<name>.xml …`, `ep01_youtube.txt …`, `report.md`
 - Import: Resolve *File > Import > Timeline*, Premiere *File > Import*
 
